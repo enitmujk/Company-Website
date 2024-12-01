@@ -1,0 +1,142 @@
+<!--HomePage HTML document-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stolarija Mujkan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+    <!-- Navigation Bar -->
+<nav>
+    <div class="brand">Stolarija MUJKAN</div>
+    <ul>
+        <li><a href="#home">Homepage</a></li>
+        <li><a href="#history">About</a></li>
+        <li class="dropdown">
+            <a href="#shop">Shop</a>
+            <ul class="dropdown-menu">
+                <li><a href="#small">•Small</a></li>
+                <li><a href="#medium">•Medium</a></li>
+                <li><a href="#large">•Large</a></li>
+                <li><a href="all-products.html">•Product Gallery</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+        <li><a href="index.html#previous-work">Previous Work</a></li>
+    </ul>
+</nav>
+
+<section class="hero home-hero">
+        <div class="hero-content">
+            <!-- <h1>Welcome to Stolarija Mujkan</h1>
+            <p>Your custom furniture, crafted with care.</p>
+            -->
+            <h1>Crafting Quality for Your Home</h1>
+            <p>sustainably sourced materials and expert craftsmanship</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- New Content Section -->
+    <section class="about">
+        <p>Our furniture is more than just a product, it’s a representation of our values, and it’s something that we stand by. We bring you serenity of home, virtues of master craftsman, and purity of heart.</p>
+        <h2>MUJKAN Family</h2>
+    </section>
+
+    <section class="history" id="history">
+        <div class="container">
+            <div class="history-content">
+                <div class="text">
+                    <h2>History behind Stolarija MUJKAN</h2>
+                    <p>Stolarija "MUJKAN" is a proud, family-owned business with a tradition spanning four generations. Passed down from father to son, our passion for woodworking has brought warmth, beauty, and functionality to countless homes and spaces. From custom furniture to large-scale projects, every piece we create reflects our dedication to quality, precision, and heart.</p>
+                <p>Over the decades, we have crafted a wide range of furniture and contributed to notable projects that have become cherished landmarks. These include the medžlis in Tešanj, the elegant šadrvan in front of the Foča džamija, and the careful renovation of the Tuzla Old Square džamija. Each project blends our deep respect for tradition with our ability to deliver modern, lasting craftsmanship.</p>
+                <p>For fifty years, we relied on word-of-mouth to grow our business. While this approach built our reputation, we now embrace technology to expand further. By creating a website, we aim to share our story, showcase our craftsmanship, and demonstrate the endless possibilities we can achieve with wood, reaching more people and continuing our legacy.</p>
+                </div>
+
+                <div class="image shadow-2xl">
+                    <img src="medzlisTe.jpg" alt="Medžlis in Tešanj">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="container">
+            <h2>Our Curated Products</h2>
+            <div class="grid">
+                <div class="item">
+                    <img src="8888888.jpg" alt="Item 1">
+                    <h3>Epoxy Board 'Light-BLUE'</h3>
+                </div>
+
+                <div class="item">
+                    <img src="333.jpg" alt="Item 2">
+                    <h3>Small Board 'Oak-DARK</h3>
+                </div>
+
+                <div class="item">
+                    <img src="888.jpg" alt="Item 3">
+                    <h3>Medium Board 'Cherry-LIGHT'</h3>
+                </div>
+
+                <div class="item">
+                    <img src="11111.jpg" alt="Item 4">
+                    <h3>Large Board 'Walnut-MIX'</h3>
+                </div>
+
+                <div class="item">
+                    <img src="3.jpg" alt="Item 5">
+                    <h3>Medium Board 'Birch-LIGHT'</h3>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container mx-auto flex flex-wrap">
+            <div class="w-full md:w-1/2 p-4">
+                <h2>Contact Us</h2>
+                <p>Phone: <a href="tel:+1234567890">+387 (0)62/459-236</a></p>
+                <p>Email: <a href="mailto:stolarijamujkan@gmail.com">stolarijamujkan@gmail.com</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/StolarijaMUJKAN" target="_blank">Stolarija MUJKAN</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/stolarija.mujkan" target="_blank">@stolarija.mujkan</a></p>
+                <p>Address: Novi Miljanovci 456, Tešanj 74264, Bosnia and Herzegovina</p>
+            </div>
+            <div class="w-full md:w-1/2 p-4">
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-lightcoral focus:border-lightcoral sm:text-sm">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-lightcoral focus:border-lightcoral sm:text-sm">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-lightcoral focus:border-lightcoral sm:text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- <h1>Welcome to Stolarija Mujkan</h1>
+        <p>Your content goes here...</p> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stolarija Mujkan. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* Styles za Gallery/AllProducts page */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.scrolled {
+    background-color: white;
+}
+
+.brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav.scrolled .brand {
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav.scrolled ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: lightgreen;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Add arrow to dropdown link */
+.dropdown > a::after {
+    content: ' ▼';
+    font-size: 0.8em;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+/* Rotate arrow when dropdown is open */
+.dropdown:hover > a::after {
+    transform: rotate(180deg);
+}
+
+/* Footer */
+footer {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+/* Hero Section for Gallery */
+.products-hero {
+    background-image: url('maleDaske.jpg');
+}
+
+/* Items Section */
+.items {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.items .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.items h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.items .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.items .item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.items .item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.items .item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.items .item:hover {
+    transform: scale(1.05);
+}
+
